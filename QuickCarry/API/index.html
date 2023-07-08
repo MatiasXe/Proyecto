@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="Imagenes/Acerca-de.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta author="CodeLink">
+  <meta name="description" content="Personas Info">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Personas</title>
+</head>
+
+<body>
+  <div class="box">
+    <div class="container">
+      <div class="top">
+
+        <span>Tienes una Cuenta?</span>
+        <header>Logearse</header>
+      </div>
+      <form action="login.php" onsubmit="return validation()" method="POST">
+        <div class="relleno">
+          <input type="text" class="input" placeholder="Usuario" id="user" name="user">
+          <i class='bx bx-user'></i>
+        </div>
+
+        <div class="relleno">
+          <input type="password" class="input" placeholder="Contraseña" id="pass" name="pass">
+          <i class='bx bx-lock-alt'></i>
+        </div>
+
+        <div class="relleno">
+          <input type="submit" class="input" id="btn" value="Logearse">
+        </div>
+        <div class="cajas">
+          <div class="one">
+            <input type="checkbox" name="" id="check">
+            <label for="check"> Recordamelo</label>
+          </div>
+          <div class="olvidar">
+            <label><a href="#">Olvidastes Contraseña?</a></label>
+          </div>
+        </div>
+    </div>
+  </div>
+  </form>
+  <script>
+    function validation() {
+      var id = document.f1.user.value;
+      var ps = document.f1.pass.value;
+      if (id.length == "" && ps.length == "") {
+        alert("User Name and Password fields are empty");
+        return false;
+      }
+      else {
+        if (id.length == "") {
+          alert("User Name is empty");
+          return false;
+        }
+        if (ps.length == "") {
+          alert("Password field is empty");
+          return false;
+        }
+      }
+    }  
+  </script>
+</body>
+
+</html>
