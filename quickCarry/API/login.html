@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="shortcut icon"href="../API/Imagenes/login.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="CodeLink" />
+    <meta name="description" content="Personas Info" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="Imagenes/Acerca-de.ico" />
+    <link rel="stylesheet" href="../API/log.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <center>
+      <nav>
+        <ul class="navbar">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../html/nosotros/nosotros.html">¿Quiénes somos?</a></li>
+          <li><a href="../html/servicios/servicios.html">Servicios</a></li>
+          <li><a href="../../API/login.html">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+    </center>
+    <div class="login-box">
+      <img src="../API/Imagenes/CodeLink.jpg" class="avatar" alt="Avatar Image">
+      <h1>Logearse</h1>
+      
+      <form
+      action="../API/Base.php"
+      onsubmit="return validation()"
+      method="POST"
+    >
+      <div class="relleno">
+        <input
+          type="text"
+          class="input"
+          placeholder="Usuario"
+          id="user"
+          name="user"
+        />
+        <i class="bx bx-user"></i>
+      </div>
+      <div class="relleno">
+        <input
+          type="password"
+          class="input"
+          placeholder="Contraseña"
+          id="pass"
+          name="pass"
+        />
+        <i class="bx bx-lock-alt"></i>
+      </div>
+      <div class="relleno">
+        <input
+          type="submit"
+          class="input"
+          id="btn"
+          value="Iniciar Sesión"
+        />
+      </div>
+      <div class="cajas">
+        <div class="one">
+          <label><a href="#">Olvidastes Tu Contraseña?</a></label>
+        </div>
+        <br>
+          <label><a href="#"> Ya Tienes Una Cuenta?</a></label>
+      </div>
+    </form>
+    </div>
+    
+    <script>
+      function validation() {
+        var id = document.forms[0].user.value;
+        var ps = document.forms[0].pass.value;
+        if (id.length === 0 && ps.length === 0) {
+          alert("Los campos Nombre De Usuario y Contraseña están vacíos");
+          return false;
+        } else {
+          if (id.length === 0) {
+            alert("El campo Nombre De Usuario está vacío");
+            return false;
+          }
+          if (ps.length === 0) {
+            alert("El campo Contraseña está vacío");
+            return false;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
