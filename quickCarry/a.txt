@@ -1,0 +1,63 @@
+  <footer>
+    <div id="txt">
+      <h1>QUICK CARRY</h1>
+      <p>Teléfono: +598 99 123 123</p>
+      <p>Dir: Av. Gral. Rivera 3729</p>
+      <p>Mail: <a href="#">quickcarry@qc.com.uy</a></p>
+      <p><a href="#">Términos y condiciones</a></p>
+    </div>
+    <div id="redes">
+      <ul class="socials">
+        <div id="redes1">
+          <il><a href="#"><img src="img/logoFacebook.png" alt="facebook" height="45px" width="45px" /></a></il>
+          <il><a href="#"><img src="img/logoInstagram.png" alt="instagram" height="45px" width="45px" /></a></il>
+        </div>
+        <div id="redes2">
+          <il><a href="#"><img src="img/logoTwitter.png" alt="twitter" height="45px" width="45px" /></a></il>
+          <il><a href="#"><img src="img/logoYoutube.png" alt="youtube" height="45px" width="45px" /></a></il>
+        </div>
+      </ul>
+    </div>
+  </footer>
+
+  footer {
+    width: 100%;
+    margin-top: auto;
+    background-color: #00152b;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+  }
+  
+  #redes {
+    margin: 0 15vw 0 0;
+  }
+  
+  #redes a {
+    padding: 5px;
+  }
+  
+  #txt {
+    margin: 0 0 0 10vw;
+  }
+  
+  #txt p {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    line-height: 25px;
+  }
+  
+  #txt a {
+    color: #fff;
+  }
+  
+  #txt a:hover {
+    color: #eebe22;
+  }
+  
+  #txt h1 {
+    font-family: "FSP DEMO - Giga Sans ExtBd";
+    font-style: normal;
+    font-weight: 400;
+    color: #ffff;
+  }
